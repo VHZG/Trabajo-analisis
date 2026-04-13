@@ -12,7 +12,7 @@
         const nominal = parseFloat(datos.get('nominal'));
         const periodicidad = parseFloat(datos.get("periodicidad"));
         const interes = parseFloat(datos.get("interes"));
-        const bonificacion = parseFloat(datos.get("bonificacion") || 0);
+        const bonificacion = parseFloat(datos.get("bonificacion").replace(',', '.') || 0);
         const gastos_estudio = parseFloat(datos.get("gastos_estudio"));
         const gastos_admin = parseFloat(datos.get("gastos_admin"));
 
